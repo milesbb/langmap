@@ -6,6 +6,9 @@ An interactive website mapping the full PIE language family. Users explore a cus
 
 **Stack:** Vite + Vanilla JS (no framework), GSAP (all animations), d3-zoom (pan/zoom), D3.js (data traversal only — not tree layout), Howler.js (audio), hash-based routing (`/language/old-english`), deploy to Vercel.
 
+**Data files — do not read directly:**
+`public/data/languages.json` (273KB, 8,500+ lines) and `public/data/graph.json` (52KB) are large generated files. Never read them in full — it will consume significant context. Use `jq` or `grep` for spot checks (e.g. `jq '.[] | select(.id=="old-english")' public/data/languages.json`).
+
 **Critical decisions — never violate these:**
 - The language graph is a **DAG, not a tree.** `parent_ids` is always an array. Multi-parent nodes (e.g. Middle English ← Old English + Old French Norman) must render from day one.
 - Every node = a real named language or proto-language. Academic groupings ("West Germanic", "Indo-Aryan") are **never nodes** — they are metadata in the `groups[]` field only.
@@ -29,31 +32,36 @@ An interactive website mapping the full PIE language family. Users explore a cus
 
 ---
 
-## Keeping Docs and Roadmap in Sync — Non-Negotiable
+## End-of-Task Protocol — Mandatory Before Every "Done"
 
-**For every change you make, you MUST update documentation to match. Both places. Every time.**
+Run these steps in order at the end of every task, no matter how small. Do not report a task complete until all steps are finished.
 
-### In the repository (`docs/`)
+**Step 1 — Tick ROADMAP items.**
+Open `docs/ROADMAP.md`. Find every checklist item this work completes or partially completes. Change `[ ]` to `[x]`. If the item is only partially done, leave it unticked and add a sub-bullet describing what remains.
 
-If your change affects any of the following, update the relevant doc file before the task is complete:
+**Step 2 — Add unlisted work.**
+If work was done that has no matching ROADMAP item (e.g. a tooling addition, a bug fix, an infrastructure change), add a new `[x]` line under the correct phase. Prefix it with `_(unlisted)_` so it's clear it was added retroactively. Do not silently omit it.
 
-- Architecture, file structure, or tech decisions → `docs/TECH_STACK.md`
-- Data schema, node rules, build phases, or node count → `docs/BUILD_PLAN.md`
-- Map interactions, animation sequences, region IDs, or SVG structure → `docs/MAP_DESIGN.md`
-- Visual style, colours, typography, or audio → `docs/VISUAL_DIRECTION.md`
-- Data loading strategy, caching, or performance approach → `docs/PERFORMANCE.md`
-- Testing strategy or new test patterns → `docs/TESTING.md`
-- Phase checklists, decisions log, or risks → `docs/ROADMAP.md`
+**Step 3 — Update `README.md`.**
+If your change affects anything a developer needs to know to run, test, or understand the project, update `README.md` before reporting done. This includes: new npm scripts, changed commands, new files or directories, updated node counts or phase statuses, changed tech stack entries, or new setup steps.
 
-**`docs/ROADMAP.md` must always reflect reality.** When you complete a checklist item, tick it. When you add work that wasn't planned, add it. When a decision changes, update the decisions log. The roadmap is a living document, not a snapshot.
+**Step 4 — Update `docs/` files.**
+For each category below that your change touched, update the corresponding doc file before reporting done:
 
-### In Notion
+| What changed | Doc file |
+|---|---|
+| Architecture, file structure, or tech decisions | `docs/TECH_STACK.md` |
+| Data schema, node rules, build phases, or node count | `docs/BUILD_PLAN.md` |
+| Map interactions, animation sequences, region IDs, or SVG structure | `docs/MAP_DESIGN.md` |
+| Visual style, colours, typography, or audio | `docs/VISUAL_DIRECTION.md` |
+| Data loading strategy, caching, or performance approach | `docs/PERFORMANCE.md` |
+| Testing strategy or new test patterns | `docs/TESTING.md` |
+| Phase checklists, decisions log, or risks | `docs/ROADMAP.md` |
 
-The Notion workspace is the source of truth for Miles and any collaborators who don't work in the codebase. If a change affects a decision, spec, or plan that is documented in Notion, update the relevant Notion page using the Notion MCP tools.
+**Step 5 — Update Notion.**
+Update every Notion page below that your change touched. Use `mcp__notion__notion-search` to find the page if you don't have its ID, then `mcp__notion__notion-update-page` to write the change. Do not leave Notion out of date.
 
-**Notion pages to keep in sync:**
-
-| What changed | Notion page to update |
+| What changed | Notion page |
 |---|---|
 | Architecture or tech decisions | ⚙️ Tech Stack |
 | Node schema, DAG rules, or build phases | 🛠️ Build Plan — Phased Node Rollout |
@@ -62,17 +70,10 @@ The Notion workspace is the source of truth for Miles and any collaborators who 
 | Data loading or performance approach | ⚡ Performance & Data Architecture |
 | Phase checklists or decisions | 🛣️ Implementation Roadmap |
 
-Use `mcp__notion__notion-update-page` or `mcp__notion__notion-create-pages` to write changes. Do not leave Notion out of date.
+**Step 6 — State what you did.**
+End every response with a one-line summary of: what ROADMAP items were ticked, what was added as unlisted, which docs were updated, which Notion pages were updated. If a step genuinely did not apply, say so explicitly — silence is not acceptable.
 
-### The rule
-
-A task is not done until:
-1. The code change is made.
-2. The relevant `docs/` file(s) are updated.
-3. The relevant Notion page(s) are updated.
-4. `docs/ROADMAP.md` reflects the current state (ticked if complete, added if new).
-
-If a doc update is genuinely not needed for a change, say so explicitly before moving on.
+**The test:** if Miles opens `README.md` or `docs/ROADMAP.md` immediately after your response, both must already reflect the completed work.
 
 ---
 

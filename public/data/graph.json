@@ -1,0 +1,2654 @@
+[
+  {
+    "id": "proto-indo-european",
+    "parent_ids": [],
+    "children": [
+      "proto-italic",
+      "proto-germanic",
+      "proto-balto-slavic",
+      "proto-hellenic",
+      "proto-armenian",
+      "albanian",
+      "proto-celtic",
+      "proto-indo-iranian",
+      "proto-anatolian",
+      "tocharian-a",
+      "tocharian-b",
+      "thracian",
+      "phrygian"
+    ],
+    "branch": "Indo-European",
+    "status": "reconstructed",
+    "date_range": "~4500–2500 BCE",
+    "region_id": "region-proto-indo-european",
+    "geo_bounds": {
+      "lat": 47,
+      "lng": 38,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "proto-italic",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [
+      "old-latin",
+      "oscan",
+      "umbrian",
+      "faliscan"
+    ],
+    "branch": "Italic",
+    "status": "reconstructed",
+    "date_range": "~1000 BCE",
+    "region_id": "region-proto-italic",
+    "geo_bounds": {
+      "lat": 43,
+      "lng": 12.5,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "old-latin",
+    "parent_ids": [
+      "proto-italic"
+    ],
+    "children": [
+      "classical-latin"
+    ],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~700–100 BCE",
+    "region_id": "region-old-latin",
+    "geo_bounds": {
+      "lat": 41.8,
+      "lng": 13,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "classical-latin",
+    "parent_ids": [
+      "old-latin"
+    ],
+    "children": [
+      "vulgar-latin"
+    ],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~100 BCE–200 CE",
+    "region_id": "region-classical-latin",
+    "geo_bounds": {
+      "lat": 41.9,
+      "lng": 12.5,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "vulgar-latin",
+    "parent_ids": [
+      "classical-latin"
+    ],
+    "children": [
+      "old-french-norman",
+      "old-french",
+      "occitan",
+      "franco-provencal",
+      "old-spanish",
+      "catalan",
+      "old-portuguese",
+      "mozarabic",
+      "sardinian",
+      "old-italian",
+      "neapolitan",
+      "sicilian",
+      "venetian",
+      "dalmatian",
+      "romanian",
+      "aromanian",
+      "romansh"
+    ],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~200–900 CE",
+    "region_id": "region-vulgar-latin",
+    "geo_bounds": {
+      "lat": 42,
+      "lng": 12.5,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "proto-germanic",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [
+      "proto-west-germanic",
+      "proto-north-germanic",
+      "proto-east-germanic"
+    ],
+    "branch": "Germanic",
+    "status": "reconstructed",
+    "date_range": "~500 BCE–200 CE",
+    "region_id": "region-proto-germanic",
+    "geo_bounds": {
+      "lat": 56,
+      "lng": 10,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "proto-west-germanic",
+    "parent_ids": [
+      "proto-germanic"
+    ],
+    "children": [
+      "old-english",
+      "old-saxon",
+      "old-high-german",
+      "old-frisian",
+      "middle-dutch"
+    ],
+    "branch": "Germanic",
+    "status": "reconstructed",
+    "date_range": "~200–700 CE",
+    "region_id": "region-proto-west-germanic",
+    "geo_bounds": {
+      "lat": 52.5,
+      "lng": 9,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "old-english",
+    "parent_ids": [
+      "proto-west-germanic"
+    ],
+    "children": [
+      "middle-english"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~450–1100 CE",
+    "region_id": "region-old-english",
+    "geo_bounds": {
+      "lat": 52.5,
+      "lng": -1.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "old-french-norman",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [
+      "middle-english"
+    ],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~900–1300 CE",
+    "region_id": "region-old-french-norman",
+    "geo_bounds": {
+      "lat": 49,
+      "lng": 0.5,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "middle-english",
+    "parent_ids": [
+      "old-english",
+      "old-french-norman"
+    ],
+    "children": [
+      "early-modern-english",
+      "scots"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~1100–1500 CE",
+    "region_id": "region-middle-english",
+    "geo_bounds": {
+      "lat": 52.5,
+      "lng": -1.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "early-modern-english",
+    "parent_ids": [
+      "middle-english"
+    ],
+    "children": [
+      "modern-english"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~1500–1700 CE",
+    "region_id": "region-early-modern-english",
+    "geo_bounds": {
+      "lat": 52,
+      "lng": -1.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "modern-english",
+    "parent_ids": [
+      "early-modern-english"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1700 CE–present",
+    "region_id": "region-modern-english",
+    "geo_bounds": {
+      "lat": 51.5,
+      "lng": -0.1,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "proto-north-germanic",
+    "parent_ids": [
+      "proto-germanic"
+    ],
+    "children": [
+      "old-norse"
+    ],
+    "branch": "Germanic",
+    "status": "reconstructed",
+    "date_range": "~200–800 CE",
+    "region_id": "region-proto-north-germanic",
+    "geo_bounds": {
+      "lat": 60,
+      "lng": 12,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "proto-east-germanic",
+    "parent_ids": [
+      "proto-germanic"
+    ],
+    "children": [
+      "gothic"
+    ],
+    "branch": "Germanic",
+    "status": "reconstructed",
+    "date_range": "~200–500 CE",
+    "region_id": "region-proto-east-germanic",
+    "geo_bounds": {
+      "lat": 52,
+      "lng": 20,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "gothic",
+    "parent_ids": [
+      "proto-east-germanic"
+    ],
+    "children": [
+      "crimean-gothic"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~350–700 CE",
+    "region_id": "region-gothic",
+    "geo_bounds": {
+      "lat": 45,
+      "lng": 24,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "crimean-gothic",
+    "parent_ids": [
+      "gothic"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~700–1800 CE",
+    "region_id": "region-crimean-gothic",
+    "geo_bounds": {
+      "lat": 44.9,
+      "lng": 34.1,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "old-norse",
+    "parent_ids": [
+      "proto-north-germanic"
+    ],
+    "children": [
+      "modern-icelandic",
+      "faroese",
+      "norwegian-bokmal",
+      "norwegian-nynorsk",
+      "swedish",
+      "danish",
+      "norn",
+      "elfdalian"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~700–1300 CE",
+    "region_id": "region-old-norse",
+    "geo_bounds": {
+      "lat": 64,
+      "lng": 18,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "modern-icelandic",
+    "parent_ids": [
+      "old-norse"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1300 CE–present",
+    "region_id": "region-icelandic",
+    "geo_bounds": {
+      "lat": 64.9,
+      "lng": -18.1,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "faroese",
+    "parent_ids": [
+      "old-norse"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1400 CE–present",
+    "region_id": "region-faroese",
+    "geo_bounds": {
+      "lat": 62,
+      "lng": -6.9,
+      "zoom": 8
+    }
+  },
+  {
+    "id": "norwegian-bokmal",
+    "parent_ids": [
+      "old-norse"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1800 CE–present",
+    "region_id": "region-norwegian-bokmal",
+    "geo_bounds": {
+      "lat": 60.5,
+      "lng": 9,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "norwegian-nynorsk",
+    "parent_ids": [
+      "old-norse"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1850 CE–present",
+    "region_id": "region-norwegian-nynorsk",
+    "geo_bounds": {
+      "lat": 61,
+      "lng": 7,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "swedish",
+    "parent_ids": [
+      "old-norse"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1225 CE–present",
+    "region_id": "region-swedish",
+    "geo_bounds": {
+      "lat": 62,
+      "lng": 16,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "danish",
+    "parent_ids": [
+      "old-norse"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1100 CE–present",
+    "region_id": "region-danish",
+    "geo_bounds": {
+      "lat": 56,
+      "lng": 10,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "norn",
+    "parent_ids": [
+      "old-norse"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~900–1850 CE",
+    "region_id": "region-norn",
+    "geo_bounds": {
+      "lat": 60.5,
+      "lng": -1.2,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "elfdalian",
+    "parent_ids": [
+      "old-norse"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1200 CE–present",
+    "region_id": "region-elfdalian",
+    "geo_bounds": {
+      "lat": 61.2,
+      "lng": 14,
+      "zoom": 8
+    }
+  },
+  {
+    "id": "old-saxon",
+    "parent_ids": [
+      "proto-west-germanic"
+    ],
+    "children": [
+      "middle-low-german"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~600–1100 CE",
+    "region_id": "region-old-saxon",
+    "geo_bounds": {
+      "lat": 53,
+      "lng": 9.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "middle-low-german",
+    "parent_ids": [
+      "old-saxon"
+    ],
+    "children": [
+      "low-german"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~1100–1600 CE",
+    "region_id": "region-middle-low-german",
+    "geo_bounds": {
+      "lat": 53.5,
+      "lng": 10,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "low-german",
+    "parent_ids": [
+      "middle-low-german"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1600 CE–present",
+    "region_id": "region-low-german",
+    "geo_bounds": {
+      "lat": 53.5,
+      "lng": 10.5,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "old-high-german",
+    "parent_ids": [
+      "proto-west-germanic"
+    ],
+    "children": [
+      "middle-high-german"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~750–1050 CE",
+    "region_id": "region-old-high-german",
+    "geo_bounds": {
+      "lat": 49,
+      "lng": 11,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "middle-high-german",
+    "parent_ids": [
+      "old-high-german"
+    ],
+    "children": [
+      "modern-german",
+      "swiss-german",
+      "luxembourgish",
+      "pennsylvania-dutch",
+      "yiddish"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~1050–1350 CE",
+    "region_id": "region-middle-high-german",
+    "geo_bounds": {
+      "lat": 48.5,
+      "lng": 11,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "modern-german",
+    "parent_ids": [
+      "middle-high-german"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1650 CE–present",
+    "region_id": "region-modern-german",
+    "geo_bounds": {
+      "lat": 51,
+      "lng": 10,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "swiss-german",
+    "parent_ids": [
+      "middle-high-german"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1300 CE–present",
+    "region_id": "region-swiss-german",
+    "geo_bounds": {
+      "lat": 47,
+      "lng": 8.2,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "luxembourgish",
+    "parent_ids": [
+      "middle-high-german"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1400 CE–present (standardised 1984)",
+    "region_id": "region-luxembourgish",
+    "geo_bounds": {
+      "lat": 49.8,
+      "lng": 6.1,
+      "zoom": 8
+    }
+  },
+  {
+    "id": "pennsylvania-dutch",
+    "parent_ids": [
+      "middle-high-german"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1700 CE–present",
+    "region_id": "region-pennsylvania-dutch",
+    "geo_bounds": {
+      "lat": 40.5,
+      "lng": -76.5,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "yiddish",
+    "parent_ids": [
+      "middle-high-german"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-yiddish",
+    "geo_bounds": {
+      "lat": 51,
+      "lng": 16,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "old-frisian",
+    "parent_ids": [
+      "proto-west-germanic"
+    ],
+    "children": [
+      "west-frisian",
+      "north-frisian",
+      "saterland-frisian"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~700–1500 CE",
+    "region_id": "region-old-frisian",
+    "geo_bounds": {
+      "lat": 53.2,
+      "lng": 6.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "west-frisian",
+    "parent_ids": [
+      "old-frisian"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1500 CE–present",
+    "region_id": "region-west-frisian",
+    "geo_bounds": {
+      "lat": 53.1,
+      "lng": 5.8,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "north-frisian",
+    "parent_ids": [
+      "old-frisian"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1200 CE–present",
+    "region_id": "region-north-frisian",
+    "geo_bounds": {
+      "lat": 54.8,
+      "lng": 8.8,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "saterland-frisian",
+    "parent_ids": [
+      "old-frisian"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1200 CE–present",
+    "region_id": "region-saterland-frisian",
+    "geo_bounds": {
+      "lat": 53,
+      "lng": 7.8,
+      "zoom": 8
+    }
+  },
+  {
+    "id": "middle-dutch",
+    "parent_ids": [
+      "proto-west-germanic"
+    ],
+    "children": [
+      "modern-dutch"
+    ],
+    "branch": "Germanic",
+    "status": "extinct",
+    "date_range": "~1150–1500 CE",
+    "region_id": "region-middle-dutch",
+    "geo_bounds": {
+      "lat": 52,
+      "lng": 5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "modern-dutch",
+    "parent_ids": [
+      "middle-dutch"
+    ],
+    "children": [
+      "afrikaans"
+    ],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1500 CE–present",
+    "region_id": "region-modern-dutch",
+    "geo_bounds": {
+      "lat": 52.3,
+      "lng": 5.3,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "afrikaans",
+    "parent_ids": [
+      "modern-dutch"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1700 CE–present (standardised 1925)",
+    "region_id": "region-afrikaans",
+    "geo_bounds": {
+      "lat": -30,
+      "lng": 25,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "scots",
+    "parent_ids": [
+      "middle-english"
+    ],
+    "children": [],
+    "branch": "Germanic",
+    "status": "living",
+    "date_range": "~1400 CE–present",
+    "region_id": "region-scots",
+    "geo_bounds": {
+      "lat": 56.5,
+      "lng": -3.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "oscan",
+    "parent_ids": [
+      "proto-italic"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~400 BCE–100 CE",
+    "region_id": "region-oscan",
+    "geo_bounds": {
+      "lat": 40.5,
+      "lng": 15.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "umbrian",
+    "parent_ids": [
+      "proto-italic"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~600–100 BCE",
+    "region_id": "region-umbrian",
+    "geo_bounds": {
+      "lat": 43.1,
+      "lng": 12.4,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "faliscan",
+    "parent_ids": [
+      "proto-italic"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~700–200 BCE",
+    "region_id": "region-faliscan",
+    "geo_bounds": {
+      "lat": 42.3,
+      "lng": 12.4,
+      "zoom": 8
+    }
+  },
+  {
+    "id": "old-french",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [
+      "middle-french"
+    ],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~900–1300 CE",
+    "region_id": "region-old-french",
+    "geo_bounds": {
+      "lat": 48.5,
+      "lng": 2.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "middle-french",
+    "parent_ids": [
+      "old-french"
+    ],
+    "children": [
+      "modern-french"
+    ],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~1300–1600 CE",
+    "region_id": "region-middle-french",
+    "geo_bounds": {
+      "lat": 47,
+      "lng": 2.5,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "modern-french",
+    "parent_ids": [
+      "middle-french"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1600 CE–present",
+    "region_id": "region-modern-french",
+    "geo_bounds": {
+      "lat": 46.5,
+      "lng": 2.5,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "occitan",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-occitan",
+    "geo_bounds": {
+      "lat": 44,
+      "lng": 2.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "franco-provencal",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~900 CE–present",
+    "region_id": "region-franco-provencal",
+    "geo_bounds": {
+      "lat": 45.5,
+      "lng": 6,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "old-spanish",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [
+      "modern-spanish",
+      "ladino"
+    ],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~950–1500 CE",
+    "region_id": "region-old-spanish",
+    "geo_bounds": {
+      "lat": 41.5,
+      "lng": -4,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "modern-spanish",
+    "parent_ids": [
+      "old-spanish"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1500 CE–present",
+    "region_id": "region-modern-spanish",
+    "geo_bounds": {
+      "lat": 40.4,
+      "lng": -3.7,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "ladino",
+    "parent_ids": [
+      "old-spanish"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1492 CE–present",
+    "region_id": "region-ladino",
+    "geo_bounds": {
+      "lat": 41,
+      "lng": 29,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "catalan",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-catalan",
+    "geo_bounds": {
+      "lat": 41.4,
+      "lng": 2.2,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "old-portuguese",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [
+      "modern-portuguese",
+      "galician"
+    ],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~900–1350 CE",
+    "region_id": "region-old-portuguese",
+    "geo_bounds": {
+      "lat": 41.5,
+      "lng": -8,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "modern-portuguese",
+    "parent_ids": [
+      "old-portuguese"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1350 CE–present",
+    "region_id": "region-modern-portuguese",
+    "geo_bounds": {
+      "lat": 39.5,
+      "lng": -8,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "galician",
+    "parent_ids": [
+      "old-portuguese"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1350 CE–present",
+    "region_id": "region-galician",
+    "geo_bounds": {
+      "lat": 42.6,
+      "lng": -8,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "mozarabic",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~900–1300 CE",
+    "region_id": "region-mozarabic",
+    "geo_bounds": {
+      "lat": 37.5,
+      "lng": -4.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "sardinian",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~900 CE–present",
+    "region_id": "region-sardinian",
+    "geo_bounds": {
+      "lat": 40,
+      "lng": 9,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "old-italian",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [
+      "modern-italian"
+    ],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~960–1300 CE",
+    "region_id": "region-old-italian",
+    "geo_bounds": {
+      "lat": 43.5,
+      "lng": 11.5,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "modern-italian",
+    "parent_ids": [
+      "old-italian"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1300 CE–present",
+    "region_id": "region-modern-italian",
+    "geo_bounds": {
+      "lat": 43,
+      "lng": 12.5,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "neapolitan",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-neapolitan",
+    "geo_bounds": {
+      "lat": 40.8,
+      "lng": 14.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "sicilian",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1100 CE–present",
+    "region_id": "region-sicilian",
+    "geo_bounds": {
+      "lat": 37.6,
+      "lng": 14,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "venetian",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-venetian",
+    "geo_bounds": {
+      "lat": 45.4,
+      "lng": 12.3,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "dalmatian",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "extinct",
+    "date_range": "~900–1898 CE",
+    "region_id": "region-dalmatian",
+    "geo_bounds": {
+      "lat": 43.5,
+      "lng": 16.4,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "romanian",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~1500 CE–present (first written attestation ~1521)",
+    "region_id": "region-romanian",
+    "geo_bounds": {
+      "lat": 45.9,
+      "lng": 25,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "aromanian",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~900 CE–present",
+    "region_id": "region-aromanian",
+    "geo_bounds": {
+      "lat": 40.5,
+      "lng": 21,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "romansh",
+    "parent_ids": [
+      "vulgar-latin"
+    ],
+    "children": [],
+    "branch": "Italic",
+    "status": "living",
+    "date_range": "~800 CE–present",
+    "region_id": "region-romansh",
+    "geo_bounds": {
+      "lat": 46.7,
+      "lng": 9.5,
+      "zoom": 8
+    }
+  },
+  {
+    "id": "proto-balto-slavic",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [
+      "proto-slavic",
+      "lithuanian",
+      "latvian",
+      "old-prussian",
+      "latgalian"
+    ],
+    "branch": "Balto-Slavic",
+    "status": "reconstructed",
+    "date_range": "~1500–500 BCE",
+    "region_id": "region-proto-balto-slavic",
+    "geo_bounds": {
+      "lat": 53,
+      "lng": 23,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "proto-slavic",
+    "parent_ids": [
+      "proto-balto-slavic"
+    ],
+    "children": [
+      "old-church-slavonic",
+      "old-east-slavic",
+      "polish",
+      "czech",
+      "slovak",
+      "upper-sorbian",
+      "lower-sorbian",
+      "kashubian",
+      "polabian",
+      "serbian",
+      "croatian",
+      "slovenian"
+    ],
+    "branch": "Balto-Slavic",
+    "status": "reconstructed",
+    "date_range": "~500 BCE–600 CE",
+    "region_id": "region-proto-slavic",
+    "geo_bounds": {
+      "lat": 51,
+      "lng": 25,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "old-church-slavonic",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [
+      "bulgarian"
+    ],
+    "branch": "Balto-Slavic",
+    "status": "liturgical",
+    "date_range": "~863–1100 CE",
+    "region_id": "region-old-church-slavonic",
+    "geo_bounds": {
+      "lat": 49.5,
+      "lng": 17,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "old-east-slavic",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [
+      "russian",
+      "ukrainian",
+      "belarusian",
+      "rusyn"
+    ],
+    "branch": "Balto-Slavic",
+    "status": "extinct",
+    "date_range": "~900–1400 CE",
+    "region_id": "region-old-east-slavic",
+    "geo_bounds": {
+      "lat": 51,
+      "lng": 32,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "russian",
+    "parent_ids": [
+      "old-east-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1400 CE–present",
+    "region_id": "region-russian",
+    "geo_bounds": {
+      "lat": 60,
+      "lng": 60,
+      "zoom": 3
+    }
+  },
+  {
+    "id": "ukrainian",
+    "parent_ids": [
+      "old-east-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1200 CE–present",
+    "region_id": "region-ukrainian",
+    "geo_bounds": {
+      "lat": 49,
+      "lng": 32,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "belarusian",
+    "parent_ids": [
+      "old-east-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1300 CE–present",
+    "region_id": "region-belarusian",
+    "geo_bounds": {
+      "lat": 53.7,
+      "lng": 28,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "rusyn",
+    "parent_ids": [
+      "old-east-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1400 CE–present",
+    "region_id": "region-rusyn",
+    "geo_bounds": {
+      "lat": 48.6,
+      "lng": 22.5,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "polish",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-polish",
+    "geo_bounds": {
+      "lat": 52,
+      "lng": 20,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "czech",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-czech",
+    "geo_bounds": {
+      "lat": 50,
+      "lng": 15.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "slovak",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-slovak",
+    "geo_bounds": {
+      "lat": 48.7,
+      "lng": 19.7,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "upper-sorbian",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1400 CE–present",
+    "region_id": "region-upper-sorbian",
+    "geo_bounds": {
+      "lat": 51.2,
+      "lng": 14.4,
+      "zoom": 8
+    }
+  },
+  {
+    "id": "lower-sorbian",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1400 CE–present",
+    "region_id": "region-lower-sorbian",
+    "geo_bounds": {
+      "lat": 51.8,
+      "lng": 14.3,
+      "zoom": 8
+    }
+  },
+  {
+    "id": "kashubian",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-kashubian",
+    "geo_bounds": {
+      "lat": 54.3,
+      "lng": 18,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "polabian",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "extinct",
+    "date_range": "~800–1750 CE",
+    "region_id": "region-polabian",
+    "geo_bounds": {
+      "lat": 52.5,
+      "lng": 11,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "serbian",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1100 CE–present",
+    "region_id": "region-serbian",
+    "geo_bounds": {
+      "lat": 44,
+      "lng": 21,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "croatian",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1100 CE–present",
+    "region_id": "region-croatian",
+    "geo_bounds": {
+      "lat": 45.1,
+      "lng": 15.2,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "bulgarian",
+    "parent_ids": [
+      "old-church-slavonic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~900 CE–present",
+    "region_id": "region-bulgarian",
+    "geo_bounds": {
+      "lat": 42.7,
+      "lng": 25.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "slovenian",
+    "parent_ids": [
+      "proto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-slovenian",
+    "geo_bounds": {
+      "lat": 46.1,
+      "lng": 14.8,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "lithuanian",
+    "parent_ids": [
+      "proto-balto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1500 CE–present (first written records)",
+    "region_id": "region-lithuanian",
+    "geo_bounds": {
+      "lat": 55.8,
+      "lng": 24,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "latvian",
+    "parent_ids": [
+      "proto-balto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1200 CE–present",
+    "region_id": "region-latvian",
+    "geo_bounds": {
+      "lat": 56.9,
+      "lng": 24.6,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "old-prussian",
+    "parent_ids": [
+      "proto-balto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "extinct",
+    "date_range": "~1200–1700 CE",
+    "region_id": "region-old-prussian",
+    "geo_bounds": {
+      "lat": 54.5,
+      "lng": 21,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "latgalian",
+    "parent_ids": [
+      "proto-balto-slavic"
+    ],
+    "children": [],
+    "branch": "Balto-Slavic",
+    "status": "living",
+    "date_range": "~1400 CE–present",
+    "region_id": "region-latgalian",
+    "geo_bounds": {
+      "lat": 56.5,
+      "lng": 26.5,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "proto-hellenic",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [
+      "mycenaean-greek"
+    ],
+    "branch": "Hellenic",
+    "status": "reconstructed",
+    "date_range": "~2000 BCE",
+    "region_id": "region-proto-hellenic",
+    "geo_bounds": {
+      "lat": 40,
+      "lng": 22,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "mycenaean-greek",
+    "parent_ids": [
+      "proto-hellenic"
+    ],
+    "children": [
+      "ancient-greek"
+    ],
+    "branch": "Hellenic",
+    "status": "extinct",
+    "date_range": "~1600–1100 BCE",
+    "region_id": "region-mycenaean-greek",
+    "geo_bounds": {
+      "lat": 37.7,
+      "lng": 22.8,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "ancient-greek",
+    "parent_ids": [
+      "mycenaean-greek"
+    ],
+    "children": [
+      "koine-greek",
+      "tsakonian"
+    ],
+    "branch": "Hellenic",
+    "status": "extinct",
+    "date_range": "~800–300 BCE (Classical period)",
+    "region_id": "region-ancient-greek",
+    "geo_bounds": {
+      "lat": 38,
+      "lng": 23.7,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "koine-greek",
+    "parent_ids": [
+      "ancient-greek"
+    ],
+    "children": [
+      "byzantine-greek"
+    ],
+    "branch": "Hellenic",
+    "status": "extinct",
+    "date_range": "~300 BCE–300 CE",
+    "region_id": "region-koine-greek",
+    "geo_bounds": {
+      "lat": 36,
+      "lng": 28,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "byzantine-greek",
+    "parent_ids": [
+      "koine-greek"
+    ],
+    "children": [
+      "modern-greek"
+    ],
+    "branch": "Hellenic",
+    "status": "extinct",
+    "date_range": "~300–1453 CE",
+    "region_id": "region-byzantine-greek",
+    "geo_bounds": {
+      "lat": 41,
+      "lng": 29,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "modern-greek",
+    "parent_ids": [
+      "byzantine-greek"
+    ],
+    "children": [],
+    "branch": "Hellenic",
+    "status": "living",
+    "date_range": "~1453 CE–present",
+    "region_id": "region-modern-greek",
+    "geo_bounds": {
+      "lat": 39,
+      "lng": 22,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "tsakonian",
+    "parent_ids": [
+      "ancient-greek"
+    ],
+    "children": [],
+    "branch": "Hellenic",
+    "status": "living",
+    "date_range": "~300 BCE–present",
+    "region_id": "region-tsakonian",
+    "geo_bounds": {
+      "lat": 37.2,
+      "lng": 22.9,
+      "zoom": 8
+    }
+  },
+  {
+    "id": "proto-armenian",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [
+      "classical-armenian"
+    ],
+    "branch": "Armenian",
+    "status": "reconstructed",
+    "date_range": "~1000 BCE",
+    "region_id": "region-proto-armenian",
+    "geo_bounds": {
+      "lat": 39.5,
+      "lng": 43,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "classical-armenian",
+    "parent_ids": [
+      "proto-armenian"
+    ],
+    "children": [
+      "eastern-armenian",
+      "western-armenian"
+    ],
+    "branch": "Armenian",
+    "status": "liturgical",
+    "date_range": "~405 CE–present (as liturgical language)",
+    "region_id": "region-classical-armenian",
+    "geo_bounds": {
+      "lat": 40,
+      "lng": 44.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "eastern-armenian",
+    "parent_ids": [
+      "classical-armenian"
+    ],
+    "children": [],
+    "branch": "Armenian",
+    "status": "living",
+    "date_range": "~1700 CE–present",
+    "region_id": "region-eastern-armenian",
+    "geo_bounds": {
+      "lat": 40.2,
+      "lng": 44.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "western-armenian",
+    "parent_ids": [
+      "classical-armenian"
+    ],
+    "children": [],
+    "branch": "Armenian",
+    "status": "living",
+    "date_range": "~1700 CE–present",
+    "region_id": "region-western-armenian",
+    "geo_bounds": {
+      "lat": 40,
+      "lng": 29,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "albanian",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [],
+    "branch": "Albanian",
+    "status": "living",
+    "date_range": "~1462 CE–present (first written records)",
+    "region_id": "region-albanian",
+    "geo_bounds": {
+      "lat": 41.3,
+      "lng": 19.8,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "proto-celtic",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [
+      "gaulish",
+      "celtiberian",
+      "lepontic",
+      "old-irish",
+      "proto-brythonic"
+    ],
+    "branch": "Celtic",
+    "status": "reconstructed",
+    "date_range": "~1000–600 BCE",
+    "region_id": "region-proto-celtic",
+    "geo_bounds": {
+      "lat": 47.8,
+      "lng": 13,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "gaulish",
+    "parent_ids": [
+      "proto-celtic"
+    ],
+    "children": [
+      "galatian"
+    ],
+    "branch": "Celtic",
+    "status": "extinct",
+    "date_range": "~600 BCE–400 CE",
+    "region_id": "region-gaulish",
+    "geo_bounds": {
+      "lat": 46,
+      "lng": 3,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "celtiberian",
+    "parent_ids": [
+      "proto-celtic"
+    ],
+    "children": [],
+    "branch": "Celtic",
+    "status": "extinct",
+    "date_range": "~500–100 BCE",
+    "region_id": "region-celtiberian",
+    "geo_bounds": {
+      "lat": 41.5,
+      "lng": -2.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "lepontic",
+    "parent_ids": [
+      "proto-celtic"
+    ],
+    "children": [],
+    "branch": "Celtic",
+    "status": "extinct",
+    "date_range": "~700–400 BCE",
+    "region_id": "region-lepontic",
+    "geo_bounds": {
+      "lat": 46,
+      "lng": 9,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "galatian",
+    "parent_ids": [
+      "gaulish"
+    ],
+    "children": [],
+    "branch": "Celtic",
+    "status": "extinct",
+    "date_range": "~280–400 CE",
+    "region_id": "region-galatian",
+    "geo_bounds": {
+      "lat": 39.5,
+      "lng": 32.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "old-irish",
+    "parent_ids": [
+      "proto-celtic"
+    ],
+    "children": [
+      "middle-irish"
+    ],
+    "branch": "Celtic",
+    "status": "extinct",
+    "date_range": "~600–900 CE",
+    "region_id": "region-old-irish",
+    "geo_bounds": {
+      "lat": 53.5,
+      "lng": -7.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "middle-irish",
+    "parent_ids": [
+      "old-irish"
+    ],
+    "children": [
+      "modern-irish",
+      "scottish-gaelic",
+      "manx"
+    ],
+    "branch": "Celtic",
+    "status": "extinct",
+    "date_range": "~900–1200 CE",
+    "region_id": "region-middle-irish",
+    "geo_bounds": {
+      "lat": 53,
+      "lng": -8,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "modern-irish",
+    "parent_ids": [
+      "middle-irish"
+    ],
+    "children": [],
+    "branch": "Celtic",
+    "status": "living",
+    "date_range": "~1200 CE–present",
+    "region_id": "region-modern-irish",
+    "geo_bounds": {
+      "lat": 53.1,
+      "lng": -9,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "scottish-gaelic",
+    "parent_ids": [
+      "middle-irish"
+    ],
+    "children": [],
+    "branch": "Celtic",
+    "status": "living",
+    "date_range": "~1200 CE–present",
+    "region_id": "region-scottish-gaelic",
+    "geo_bounds": {
+      "lat": 57.5,
+      "lng": -6,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "manx",
+    "parent_ids": [
+      "middle-irish"
+    ],
+    "children": [],
+    "branch": "Celtic",
+    "status": "living",
+    "date_range": "~1300 CE–present",
+    "region_id": "region-manx",
+    "geo_bounds": {
+      "lat": 54.2,
+      "lng": -4.5,
+      "zoom": 8
+    }
+  },
+  {
+    "id": "proto-brythonic",
+    "parent_ids": [
+      "proto-celtic"
+    ],
+    "children": [
+      "old-welsh",
+      "breton",
+      "cornish",
+      "cumbric"
+    ],
+    "branch": "Celtic",
+    "status": "reconstructed",
+    "date_range": "~100 BCE–600 CE",
+    "region_id": "region-proto-brythonic",
+    "geo_bounds": {
+      "lat": 52,
+      "lng": -3,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "old-welsh",
+    "parent_ids": [
+      "proto-brythonic"
+    ],
+    "children": [
+      "modern-welsh"
+    ],
+    "branch": "Celtic",
+    "status": "extinct",
+    "date_range": "~550–1100 CE",
+    "region_id": "region-old-welsh",
+    "geo_bounds": {
+      "lat": 52.5,
+      "lng": -3.8,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "modern-welsh",
+    "parent_ids": [
+      "old-welsh"
+    ],
+    "children": [],
+    "branch": "Celtic",
+    "status": "living",
+    "date_range": "~1400 CE–present",
+    "region_id": "region-modern-welsh",
+    "geo_bounds": {
+      "lat": 52.1,
+      "lng": -3.8,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "breton",
+    "parent_ids": [
+      "proto-brythonic"
+    ],
+    "children": [],
+    "branch": "Celtic",
+    "status": "living",
+    "date_range": "~600 CE–present",
+    "region_id": "region-breton",
+    "geo_bounds": {
+      "lat": 48.2,
+      "lng": -3.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "cornish",
+    "parent_ids": [
+      "proto-brythonic"
+    ],
+    "children": [],
+    "branch": "Celtic",
+    "status": "living",
+    "date_range": "~600 CE–present (extinct 1777; revived 20th century)",
+    "region_id": "region-cornish",
+    "geo_bounds": {
+      "lat": 50.3,
+      "lng": -5,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "cumbric",
+    "parent_ids": [
+      "proto-brythonic"
+    ],
+    "children": [],
+    "branch": "Celtic",
+    "status": "extinct",
+    "date_range": "~500–1100 CE",
+    "region_id": "region-cumbric",
+    "geo_bounds": {
+      "lat": 54.7,
+      "lng": -2.8,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "proto-indo-iranian",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [
+      "proto-iranian",
+      "proto-indo-aryan"
+    ],
+    "branch": "Indo-Iranian",
+    "status": "reconstructed",
+    "date_range": "~2000–1500 BCE",
+    "region_id": "region-proto-indo-iranian",
+    "geo_bounds": {
+      "lat": 48,
+      "lng": 63,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "proto-iranian",
+    "parent_ids": [
+      "proto-indo-iranian"
+    ],
+    "children": [
+      "avestan",
+      "old-persian",
+      "pashto",
+      "kurdish",
+      "balochi",
+      "ossetian",
+      "sogdian"
+    ],
+    "branch": "Indo-Iranian",
+    "status": "reconstructed",
+    "date_range": "~1500–1000 BCE",
+    "region_id": "region-proto-iranian",
+    "geo_bounds": {
+      "lat": 37,
+      "lng": 58,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "avestan",
+    "parent_ids": [
+      "proto-iranian"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "liturgical",
+    "date_range": "~1500–400 BCE",
+    "region_id": "region-avestan",
+    "geo_bounds": {
+      "lat": 36,
+      "lng": 63,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "old-persian",
+    "parent_ids": [
+      "proto-iranian"
+    ],
+    "children": [
+      "middle-persian"
+    ],
+    "branch": "Indo-Iranian",
+    "status": "extinct",
+    "date_range": "~600–300 BCE",
+    "region_id": "region-old-persian",
+    "geo_bounds": {
+      "lat": 29.5,
+      "lng": 52.5,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "middle-persian",
+    "parent_ids": [
+      "old-persian"
+    ],
+    "children": [
+      "modern-persian",
+      "dari",
+      "tajik"
+    ],
+    "branch": "Indo-Iranian",
+    "status": "extinct",
+    "date_range": "~300 BCE–900 CE",
+    "region_id": "region-middle-persian",
+    "geo_bounds": {
+      "lat": 32,
+      "lng": 53,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "modern-persian",
+    "parent_ids": [
+      "middle-persian"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~900 CE–present",
+    "region_id": "region-modern-persian",
+    "geo_bounds": {
+      "lat": 32.4,
+      "lng": 53.7,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "dari",
+    "parent_ids": [
+      "middle-persian"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~900 CE–present",
+    "region_id": "region-dari",
+    "geo_bounds": {
+      "lat": 34.5,
+      "lng": 69.2,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "tajik",
+    "parent_ids": [
+      "middle-persian"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~900 CE–present",
+    "region_id": "region-tajik",
+    "geo_bounds": {
+      "lat": 38.8,
+      "lng": 71,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "pashto",
+    "parent_ids": [
+      "proto-iranian"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1000 CE–present (first written records)",
+    "region_id": "region-pashto",
+    "geo_bounds": {
+      "lat": 33,
+      "lng": 68,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "kurdish",
+    "parent_ids": [
+      "proto-iranian"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-kurdish",
+    "geo_bounds": {
+      "lat": 37,
+      "lng": 43,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "balochi",
+    "parent_ids": [
+      "proto-iranian"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-balochi",
+    "geo_bounds": {
+      "lat": 28,
+      "lng": 63,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "ossetian",
+    "parent_ids": [
+      "proto-iranian"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-ossetian",
+    "geo_bounds": {
+      "lat": 42.9,
+      "lng": 44.7,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "sogdian",
+    "parent_ids": [
+      "proto-iranian"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "extinct",
+    "date_range": "~300 BCE–1000 CE",
+    "region_id": "region-sogdian",
+    "geo_bounds": {
+      "lat": 39.7,
+      "lng": 67,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "proto-indo-aryan",
+    "parent_ids": [
+      "proto-indo-iranian"
+    ],
+    "children": [
+      "vedic-sanskrit"
+    ],
+    "branch": "Indo-Iranian",
+    "status": "reconstructed",
+    "date_range": "~2000–1500 BCE",
+    "region_id": "region-proto-indo-aryan",
+    "geo_bounds": {
+      "lat": 37,
+      "lng": 66,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "vedic-sanskrit",
+    "parent_ids": [
+      "proto-indo-aryan"
+    ],
+    "children": [
+      "classical-sanskrit",
+      "pali"
+    ],
+    "branch": "Indo-Iranian",
+    "status": "liturgical",
+    "date_range": "~1500–500 BCE",
+    "region_id": "region-vedic-sanskrit",
+    "geo_bounds": {
+      "lat": 30,
+      "lng": 76,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "classical-sanskrit",
+    "parent_ids": [
+      "vedic-sanskrit"
+    ],
+    "children": [
+      "hindi-urdu",
+      "bengali",
+      "punjabi",
+      "gujarati",
+      "marathi",
+      "nepali",
+      "sinhala",
+      "romani"
+    ],
+    "branch": "Indo-Iranian",
+    "status": "liturgical",
+    "date_range": "~500 BCE–present (as classical/liturgical language)",
+    "region_id": "region-classical-sanskrit",
+    "geo_bounds": {
+      "lat": 23,
+      "lng": 80,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "pali",
+    "parent_ids": [
+      "vedic-sanskrit"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "liturgical",
+    "date_range": "~300 BCE–present (as canonical language of Theravada Buddhism)",
+    "region_id": "region-pali",
+    "geo_bounds": {
+      "lat": 15,
+      "lng": 100,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "hindi-urdu",
+    "parent_ids": [
+      "classical-sanskrit"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1300 CE–present",
+    "region_id": "region-hindi-urdu",
+    "geo_bounds": {
+      "lat": 26,
+      "lng": 78,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "bengali",
+    "parent_ids": [
+      "classical-sanskrit"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-bengali",
+    "geo_bounds": {
+      "lat": 23.7,
+      "lng": 90.4,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "punjabi",
+    "parent_ids": [
+      "classical-sanskrit"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-punjabi",
+    "geo_bounds": {
+      "lat": 31,
+      "lng": 74,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "gujarati",
+    "parent_ids": [
+      "classical-sanskrit"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1200 CE–present",
+    "region_id": "region-gujarati",
+    "geo_bounds": {
+      "lat": 22.3,
+      "lng": 72.6,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "marathi",
+    "parent_ids": [
+      "classical-sanskrit"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-marathi",
+    "geo_bounds": {
+      "lat": 19.8,
+      "lng": 75.3,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "nepali",
+    "parent_ids": [
+      "classical-sanskrit"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1400 CE–present",
+    "region_id": "region-nepali",
+    "geo_bounds": {
+      "lat": 28,
+      "lng": 84,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "sinhala",
+    "parent_ids": [
+      "classical-sanskrit"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~200 BCE–present",
+    "region_id": "region-sinhala",
+    "geo_bounds": {
+      "lat": 7.9,
+      "lng": 80.7,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "romani",
+    "parent_ids": [
+      "classical-sanskrit"
+    ],
+    "children": [],
+    "branch": "Indo-Iranian",
+    "status": "living",
+    "date_range": "~1000 CE–present",
+    "region_id": "region-romani",
+    "geo_bounds": {
+      "lat": 46,
+      "lng": 20,
+      "zoom": 4
+    }
+  },
+  {
+    "id": "proto-anatolian",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [
+      "hittite",
+      "luwian",
+      "lydian"
+    ],
+    "branch": "Anatolian",
+    "status": "reconstructed",
+    "date_range": "~3500–2000 BCE",
+    "region_id": "region-proto-anatolian",
+    "geo_bounds": {
+      "lat": 39,
+      "lng": 35,
+      "zoom": 5
+    }
+  },
+  {
+    "id": "hittite",
+    "parent_ids": [
+      "proto-anatolian"
+    ],
+    "children": [],
+    "branch": "Anatolian",
+    "status": "extinct",
+    "date_range": "~1750–1200 BCE",
+    "region_id": "region-hittite",
+    "geo_bounds": {
+      "lat": 40,
+      "lng": 35,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "luwian",
+    "parent_ids": [
+      "proto-anatolian"
+    ],
+    "children": [],
+    "branch": "Anatolian",
+    "status": "extinct",
+    "date_range": "~2000–700 BCE",
+    "region_id": "region-luwian",
+    "geo_bounds": {
+      "lat": 37.5,
+      "lng": 32,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "lydian",
+    "parent_ids": [
+      "proto-anatolian"
+    ],
+    "children": [],
+    "branch": "Anatolian",
+    "status": "extinct",
+    "date_range": "~700–200 BCE",
+    "region_id": "region-lydian",
+    "geo_bounds": {
+      "lat": 38.5,
+      "lng": 28.5,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "tocharian-a",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [],
+    "branch": "Tocharian",
+    "status": "extinct",
+    "date_range": "~500–900 CE (attested period)",
+    "region_id": "region-tocharian-a",
+    "geo_bounds": {
+      "lat": 41,
+      "lng": 85,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "tocharian-b",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [],
+    "branch": "Tocharian",
+    "status": "extinct",
+    "date_range": "~500–900 CE (attested period)",
+    "region_id": "region-tocharian-b",
+    "geo_bounds": {
+      "lat": 41.7,
+      "lng": 83,
+      "zoom": 7
+    }
+  },
+  {
+    "id": "thracian",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [],
+    "branch": "Indo-European",
+    "status": "extinct",
+    "date_range": "~700 BCE–500 CE",
+    "region_id": "region-thracian",
+    "geo_bounds": {
+      "lat": 42,
+      "lng": 26,
+      "zoom": 6
+    }
+  },
+  {
+    "id": "phrygian",
+    "parent_ids": [
+      "proto-indo-european"
+    ],
+    "children": [],
+    "branch": "Indo-European",
+    "status": "extinct",
+    "date_range": "~900 BCE–500 CE",
+    "region_id": "region-phrygian",
+    "geo_bounds": {
+      "lat": 39,
+      "lng": 31,
+      "zoom": 6
+    }
+  }
+]

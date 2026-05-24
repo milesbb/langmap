@@ -43,10 +43,15 @@ The language graph is a **Directed Acyclic Graph** — some nodes have multiple 
 ```
 /public
   map.svg                 # World map SVG (v1: generated from Natural Earth GeoJSON; v2: Miles's illustration)
+  data/
+    languages.json        # All node data — authoritative source (273KB raw, ~100KB gzip)
+    graph.json            # Structure only — derived from languages.json; load first for fast initial render
+    nodes/               # Per-node rich content, loaded on demand (Phase 2+ escape hatch)
 
-/data
-  languages.json          # All node data — authoritative source
-  graph.json              # Structure only — load first for fast initial render
+/scripts
+  build-graph.js          # Derives graph.json from languages.json; run automatically in npm run build
+  generate-map.js         # Generates public/map.svg from Natural Earth 110m GeoJSON (run once / on update)
+  optimise-map.js         # Runs SVGO on map.svg; preserves all region IDs and viewBox; run in npm run build
 
 /src
   main.js                 # Entry point
@@ -67,7 +72,19 @@ The language graph is a **Directed Acyclic Graph** — some nodes have multiple 
     AudioManager.js       # Howler.js; per-branch ambient loops, crossfade on transition
   data/
     graph.js              # DAG traversal helpers (find ancestors, find children, find path)
+    loader.js             # fetch() wrappers for graph.json and languages.json
+    types.js              # JSDoc typedefs: Language, GraphNode, SampleWord, SpeechBubble
+    __tests__/
+      validate.test.js    # 17 data validation tests (run via npm run validate:data)
 ```
+
+## Data Schema Notes
+
+- `SampleWord`: `{ original, romanisation, meaning }` — not `{ word, lang_script, meaning }`
+- `SpeechBubble`: `{ original, romanisation, translation, note? }` — note is optional (`"reconstructed"`, `"attested"`, etc.)
+- `youtube_start_seconds` is **not** in the data schema — omit it
+- `graph.json` has a `children` field (array of child IDs) in addition to `parent_ids`
+- `region_id` in the data is the full SVG element id (e.g. `"region-england"`) — the SVG element id attribute must match exactly
 
 ---
 

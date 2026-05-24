@@ -21,11 +21,12 @@ YouTube IDs are **not** a pre-dev blocker. The embed component renders a placeho
 
 ## Phase 0 — Setup & Data (Week 1)
 
-- [ ] Set up Vite project with GSAP, D3, d3-zoom, Howler.js
-- [ ] Set up Vitest and Playwright; configure CI to run both on every PR
-- [ ] Build `languages.json` — fetch all child pages from Notion "Language Tree Data" in reading order (see "Claude Code — Start Here" page for exact instructions and page URLs). Merge all JSON arrays.
+- [x] Set up Vite project with GSAP, D3, d3-zoom, Howler.js
+- [x] Set up Vitest and Playwright; configure CI to run both on every PR
+- [x] _(unlisted)_ ESLint configured (`eslint.config.js`, `@eslint/js` recommended, browser + Node globals); `npm run lint` script added; lint step runs in CI before unit tests
+- [x] Build `languages.json` — fetch all child pages from Notion "Language Tree Data" in reading order (see "Claude Code — Start Here" page for exact instructions and page URLs). Merge all JSON arrays.
   - Schema: `id`, `name`, `native_name`, `parent_ids[]`, `parent_influence{}`, `date_range`, `status`, `region_id`, `geo_bounds`, `speakers_culture`, `split_reason`, `interesting_fact`, `sample_words[]`, `speech_bubbles[]`, `groups[]`, `glottolog_id`, `iso_639_3`, `wikipedia_url`, `youtube_id` (nullable), `sources[]`
-- [ ] **Tests — data validation** (write before merging `languages.json`):
+- [x] **Tests — data validation** (`src/data/__tests__/validate.test.js`, 17 tests, run via `npm run validate:data`):
   - No duplicate `id` values
   - Every `parent_id` references an existing node
   - No cycles in the DAG
@@ -33,11 +34,16 @@ YouTube IDs are **not** a pre-dev blocker. The embed component renders a placeho
   - All required fields present; `status` is a valid enum value
   - `geo_bounds.lat/lng` in valid ranges
   - `youtube_id` is `null` or non-empty string (never `undefined`)
-- [ ] Build `graph.json` (adjacency list derived from `languages.json`; load this first)
-- [ ] **Tests — graph.json** matches `languages.json` structure; `childrenOf`/`parentsOf` are inverse
-- [ ] Hash-based routing (`/language/old-english`)
-- [ ] SVGO optimisation step in build pipeline (preserving named IDs and viewBox)
-- [ ] Generate equirectangular SVG from Natural Earth GeoJSON with correct `#region-{id}` element IDs
+  - speech_bubbles have required fields; reconstructed forms use `*` prefix
+- [x] Build `graph.json` (adjacency list derived from `languages.json`; load this first)
+- [x] **Tests — graph.json** matches `languages.json` structure; `childrenOf`/`parentsOf` are inverse; Middle English multi-parent case covered
+- [x] Hash-based routing (`/language/old-english`)
+- [x] SVGO optimisation step in build pipeline (`scripts/optimise-map.js`; preserves named IDs and viewBox; runs in `npm run build`)
+- [x] Generate equirectangular SVG from Natural Earth GeoJSON with correct `id="{region_id}"` element IDs (`scripts/generate-map.js`; 177 countries + 153 region placeholders; `npm run generate:map`)
+- [x] _(unlisted)_ `validate:data` step added to CI pipeline — runs after lint, before unit tests
+- [x] _(unlisted)_ Fixed `src/data/types.js` to match actual data schema (`SampleWord`, `SpeechBubble` fields; added `children` to `GraphNode`; removed nonexistent `youtube_start_seconds`)
+- [x] _(unlisted)_ Fixed data bug: `galatian` speech bubble used `meaning` field instead of `translation`
+- [x] _(unlisted)_ `README.md` created with project overview, local dev setup, test commands, project structure, and build phase status table
 
 ---
 
@@ -45,32 +51,36 @@ YouTube IDs are **not** a pre-dev blocker. The embed component renders a placeho
 
 **Goal:** Navigable, zoomable world map with region highlights and info panels. No speech bubbles, audio, or YouTube yet.
 
-- [ ] Render SVG world map in viewport (`preserveAspectRatio="xMidYMid meet"`)
-- [ ] **Tests — `geoToSvg` coordinate calculation** (unit tests, all corner cases including PIE and Tocharian coords)
-- [ ] d3-zoom: pan (drag/swipe) + scroll-wheel zoom + pinch-to-zoom (mobile)
-- [ ] Zoom bounds: `scaleExtent([0.5, 10])`, `translateExtent` clamped to map bounds
-- [ ] Semantic zoom: CSS class toggling on `layer-labels-region`, `layer-labels-city` based on d3-zoom scale
-- [ ] Region highlight system: `display: block` + animated stroke on `#region-{id}` when node is active
-- [ ] **Tests — RegionManager** (only active region shows; no error on missing region ID)
-- [ ] Node markers: small circles at `geo_bounds` lat/lng, coloured by branch
-- [ ] **Tests — DAG traversal helpers** (`findAncestors`, `findChildren`, `findPath`, `buildAdjacencyList`) — must cover multi-parent Middle English case explicitly
-- [ ] **Map transition animation** (used for ALL navigation):
+- [x] Render SVG world map in viewport (`preserveAspectRatio="xMidYMid meet"`)
+- [x] **Tests — `geoToSvg` coordinate calculation** (unit tests, all corner cases including PIE and Tocharian coords)
+- [x] d3-zoom: pan (drag/swipe) + scroll-wheel zoom + pinch-to-zoom (mobile)
+- [x] Zoom bounds: `scaleExtent([0.5, 10])`, `translateExtent` clamped to map bounds
+- [x] Semantic zoom: CSS class toggling on `layer-labels-region`, `layer-labels-city` based on d3-zoom scale
+- [x] Region highlight system: `display: block` + animated stroke on `#region-{id}` when node is active
+- [x] **Tests — RegionManager** (only active region shows; no error on missing region ID)
+- [x] Node markers: small circles at `geo_bounds` lat/lng, coloured by branch
+- [x] **Tests — DAG traversal helpers** (`findAncestors`, `findChildren`, `findPath`, `buildAdjacencyList`) — must cover multi-parent Middle English case explicitly
+- [x] **Map transition animation** (used for ALL navigation):
   - Step 1: current node exit — speech bubbles sink, region outline fades, info panel slides out (~400ms)
   - Step 2: map pan + zoom via GSAP `Power2.inOut` to new `geo_bounds` (~700–1000ms); for distant jumps, briefly zoom out to ~50% mid-flight
   - Step 3: new node entrance — region outline draws in, info panel slides in (~500ms)
   - Timeline bar year counter ticks during Step 2
-- [ ] **Tests — NodeTransition** (exit before pan, pan before enter, distant jump triggers zoom-out, URL updates after transition)
-- [ ] DAG edge rendering: multi-parent nodes show edges from all `parent_ids`; edges styled differently from single-parent edges
-- [ ] Info panel (right panel desktop / bottom sheet mobile): language name, date range, speakers, split reason, interesting fact, sample words, Wikipedia link
-- [ ] **Tests — InfoPanel** (all fields render; null fields omit gracefully; extinct/reconstructed badge; axe check)
-- [ ] Timeline bar: always-visible top bar, year updates on node change with animated tick
-- [ ] Back navigation: browser back button + swipe-back triggers reverse transition to parent node
-- [ ] Overview toggle (top-right): zoom out to show full world map + all migration paths at low opacity
-- [ ] **E2E — English path** (PIE → Proto-Germanic → Proto-West-Germanic → Old English → Middle English → Early Modern English → Modern English); URL updates at each step
-- [ ] **E2E — Multi-parent node** (Middle English shows edges from both parents; info panel shows both influences)
-- [ ] **E2E — Back navigation** (browser back returns to previous language)
+- [x] **Tests — NodeTransition** (exit before pan, pan before enter, distant jump triggers zoom-out, URL updates after transition)
+- [x] DAG edge rendering: multi-parent nodes show edges from all `parent_ids`; edges styled differently from single-parent edges
+- [x] Info panel (right panel desktop / bottom sheet mobile): language name, date range, speakers, split reason, interesting fact, sample words, Wikipedia link
+- [x] **Tests — InfoPanel** (all fields render; null fields omit gracefully; extinct/reconstructed badge; axe check)
+- [x] Timeline bar: always-visible top bar, year updates on node change with animated tick
+- [x] Back navigation: browser back button + swipe-back triggers reverse transition to parent node
+- [x] Overview toggle (top-right): zoom out to show full world map + all migration paths at low opacity
+- [x] **E2E — English path** (PIE → Proto-Germanic → Proto-West-Germanic → Old English → Middle English → Early Modern English → Modern English); URL updates at each step
+- [x] **E2E — Multi-parent node** (Middle English shows edges from both parents; info panel shows both influences)
+- [x] **E2E — Back navigation** (browser back returns to previous language)
+- [x] _(unlisted)_ `NodeTransition` uses lazy getter for `fullNode` to eliminate race condition between languages.json load and animation completion
+- [x] _(unlisted)_ `isTransitioning` flag on `NodeTransition` prevents backfill mid-animation GSAP conflicts
+- [x] _(unlisted)_ InfoPanel title-cases parent influence IDs for proper noun rendering (e.g. "Old French Norman")
+- [x] _(unlisted)_ Node marker click in E2E uses `page.evaluate()` to bypass SVG transform coordinate mismatch
 
-**MVP milestone:** English path navigable end-to-end (PIE → Modern English). Multi-parent edge (Old English + Norman French → Middle English) renders correctly. All tests green.
+**MVP milestone:** English path navigable end-to-end (PIE → Modern English). Multi-parent edge (Old English + Norman French → Middle English) renders correctly. All tests green. ✅
 
 ---
 

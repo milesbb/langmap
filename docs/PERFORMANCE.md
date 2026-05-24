@@ -17,7 +17,7 @@ The real goals are:
 Three files, loaded in priority order:
 
 ```
-/data
+/public/data
   graph.json          ← Load first, on app init (~15KB)
   languages.json      ← Load second, after first paint (~80–120KB gzipped)
   nodes/
